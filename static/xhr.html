@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xhr</title>
+</head>
+<body>
+    <h1>xhr测试</h1>
+    <script src="./xhr.js"></script>
+    <script>
+        get('/get')
+            .then(val => console.log(val))
+            .catch(err => console.log(err))
+        post('/post')
+            .then(val => console.log(val))
+            .catch(err => console.log(err))
+    </script>
+</body>
+</html>
